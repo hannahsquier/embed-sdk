@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<h1>Embed Example</h1>
-<div id="chartContainer"></div>
+<html>
+  <body>
+    <script type="text/javascript" src="https://s3.amazonaws.com/staging-embed-sdk/assets/embed-bundle.js"></script>
+    <h1>Embed Example</h1>
+    <div id="chartContainer"></div>
 
-<script type="text/javascript" src="https://s3.amazonaws.com/staging-embed-sdk/assets/embed-bundle.js"></script>
 
-<script type="text/javascript">
-  OpenGovSDK.embed({ embed: { id: '1234', type: `dashboardTile` },
-  targetSelector: '#chartContainer',
-  options: {hasTooltips: true, width: 100, align: 'right'} });
-</script>
+    <script type="text/javascript">
+      OpenGovSDK.embed({ embed: { id: '1234', type: `dashboardTile` },
+      targetSelector: '#chartContainer',
+      options: {hasTooltips: true, width: 100, align: 'right'} });
+    </script>
+  </body>  
+</html>
