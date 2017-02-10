@@ -4,11 +4,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
   </head>
   <body>
-    <script charset="UTF-8" type="text/javascript" src="https://s3.amazonaws.com/staging-embed-sdk/assets/embed-bundle.js"></script>
+    <script type="text/javascript" src="https://s3.amazonaws.com/staging-embed-sdk/assets/embed-bundle.js"></script>
     <h1>Embed Example</h1>
-    <div id="chartContainer"></div>
-    <script charset="UTF-8" type="text/javascript">
-      OpenGovSDK.embed({ "embed": { "id": "1234", "type": "dashboardTile" }, "targetSelector": '#chartContainer',"options": {"hasTooltips": true, "width": 100, "align": "right"} });
+    <div id="chartContainer">
+    </div>
+    <script type="text/javascript">
+      <![CDATA[
+        OpenGovSDK.embed({ "embed": { "id": "1234", "type": "dashboardTile" }, "targetSelector": '#chartContainer',"options": {"hasTooltips": true, "width": 100, "align": "right"} });
+      ]]>
     </script>
   </body>  
 </html>
