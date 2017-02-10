@@ -2,21 +2,15 @@
 <html class="ie9">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-  </head>
-  <body>
-    <!--<script type="text/javascript" src="https://s3.amazonaws.com/staging-embed-sdk/assets/embed-bundle.js"></script>-->
-    <script>
-     var OpenGovSDK = {
-       embed: function(prop) {
-         console.log(prop)
-       }
-     };
-    </script>
-    <h1>Embed Example</h1>
-    <div id="chartContainer">
-    </div>
+    <script type="text/javascript" src="https://s3.amazonaws.com/staging-embed-sdk/assets/embed-bundle.js"></script>
     <script type="text/javascript">
         OpenGovSDK.embed({ "embed": { "id": "1234", "type": "dashboardTile" }, "targetSelector": "#chartContainer","options": {"hasTooltips": true, "width": 100, "align": "right"} });
     </script>
+  </head>
+  <body>
+    
+    <h1>Embed Example</h1>
+    <div id="chartContainer">
+    </div>
   </body>  
 </html>
